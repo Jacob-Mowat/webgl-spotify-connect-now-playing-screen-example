@@ -11,7 +11,7 @@
 // where we get/show artist images in addition to the cover art
 
 // auth
-var CLIENT_ID = 'cd0cbddc0c604e839784cfb2b59f8273';
+var CLIENT_ID = '2e3668b4b935403d8e6f02fe1b911ca3';
 var SCOPES = [
   'user-read-currently-playing',
   'user-read-playback-state',
@@ -632,7 +632,7 @@ function msPerImage() {
         // plus one to wrap around to get back to the
         // album art
          imageDur = trackDuration / (imageList.length + 1);
-    } 
+    }
     return Math.max(fadeinTime + fadeinTime + 3, imageDur);
 }
 
@@ -745,7 +745,7 @@ function initKeyboard() {
 
 function bootstrap() {
   initWebGL(document.getElementById("canvas"));
-  initWebGLBuffers();
+  //initWebGLBuffers();
   initWebGLShaders();
   initKeyboard();
   initUI();
